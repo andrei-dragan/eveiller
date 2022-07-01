@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Quattrocento+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Put in the "images" folder your logo with the name "logo_bar.png" -->
+    <link rel="shortcut icon" href="images/logo_bar.png"/> 
+    <link rel="stylesheet" href="index.css">
+    <title>Éveiller</title>
+</head>
+<body>  
+    <!-- Here is the loading animation before the page loads completly -->
+    <div id="loader">
+        <div class="loader" id="loader1"></div>
+        <div class="loader" id="loader2"></div>
+        <div class="loader" id="loader3"></div>
+        <div class="loader" id="loader4"></div>
+    </div>
+
+
+    <main>
+        <!-- SECTION1: The landing page -->
+        <section id="landing_page">
+            <!-- Here is the gradient brown effect-->
+            <div id="gradient_effect"></div>
+
+            <!-- Here goes the actual images. The images are edited through Javascript in the "index.js" file -->
+            <div id="actual_image">
+                <div class="actual_image_inside" id="actual_image_inside1"></div>
+                <div class="actual_image_inside" id="actual_image_inside2"></div>
+                <div class="actual_image_inside" id="actual_image_inside3"></div>
+                <div class="actual_image_inside" id="actual_image_inside4"></div>
+            </div>
+
+            <!-- Here comes the top part of the section. The logo which can be changed and the button that opens the navigation menu -->
+            <div id="landing_top_part">
+                <div onclick="openNav()" id="open_nav">
+                    <div id="line1"></div>
+                    <div id="line2"></div>
+                    <div id="line1"></div>
+                </div>
+
+                <div id="logo_div">
+                    <img src="images/top_part_logo.png" alt="">
+                </div>
+            </div>
+
+            <!-- Here comes the header text. The big title and the paragraph under him. Edit if it's needed -->
+            <div id="landing_text">
+                <h1>Welcome</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt nihil ipsum, repellat aliquid harum omnis deserunt! Eveniet maxime provident nisi?</p>
+            </div>
+
+            <!-- Details regarding the beauty of the page -->
+            <div id="scroll_down">
+                <a href="#our_history">
+                    <div id="rounded_border_square">
+                        <div id="circle_inside"></div>
+                    </div>
+                </a>
+                <h1>scroll down</h1>
+            </div>
+
+            <div id="landing_counter">
+                <div id="landing_counter_line"></div>
+                <div id="circles_counter">
+                    <div class="circle" id="circle1"></div>
+                    <div class="circle" id="circle2"></div>
+                    <div class="circle" id="circle3"></div>
+                    <div class="circle" id="circle4"></div>
+                    <!-- If you want more than 4 landing images add more circles div like the 4 above. 
+                    !BE CAREFUL to change the id to "circle5", "circle6", etc -->
+                </div>
+                <div id="landing_counter_line"></div>
+            </div>
+
+            <div id="behind_header">
+                <img src="images/coffee_header.png" alt="">
+            </div>
+
+            <div id="landing_connection_line">
+                <div id="landing_connection_line_head"></div>
+            </div>
+
+            <!-- Social media links: here add the links to your social media pages. Instead of the "#" in the href="#" add the URL link to your social media pages -->
+            <div id="social_media">
+                <a href="#"><img src="images/facebook.png" alt=""></a>
+                <a href="#"><img src="images/instagram.png" alt=""></a>
+                <a href="#"><img src="images/twitter.png" alt=""></a>
+            </div>
+        </section>
+
+
+        <!-- SECTION2: Our History -->
+        <section id="our_history">
+            <!-- Here is the connection line on the top left side -->
+            <div id="history_connection_line">
+                <div id="history_connection_line_head"></div>
+            </div>
+
+            <!-- Here comes some text. Edit if it's needed -->
+            <div id="our_history_text">
+                <h1>Our History</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ullam accusamus quo quis delectus, nesciunt veritatis libero omnis non inventore architecto distinctio, voluptatum iusto itaque doloribus consequatur aspernatur corrupti voluptas unde. Corrupti, minus facere! Sapiente voluptatibus qui perspiciatis vero voluptas et sunt consequatur, aut, autem repellendus nisi quo magnam ratione, nihil atque a dolores ullam quas ipsum adipisci inventore? Ab ea ad, repudiandae eum laboriosam iusto, minima in perferendis dolores doloribus cumque ipsa quod possimus voluptatibus vero et itaque sequi est culpa consequatur deserunt ipsum dignissimos? Veniam adipisci dolores iste nulla, officiis illo, quaerat unde asperiores incidunt laboriosam accusantium consequuntur?</p>
+            </div>
+
+            <!-- The macaroons image -->
+            <div id="macaroons">
+                <img src="images/macaroons.png" alt="">
+            </div>
+        </section>
+
+
+        <!-- SECTION3: Our Provider -->
+        <section id="provider">
+            <!-- Details regarding the beauty of the page -->
+            <div id="provider_image">
+                <img id="provider_actual_image" src="images/provider_image.png" alt="">
+                <div id="under_image_text">
+                    <h1>
+                        professionalism & excellence
+                        <br>
+                        - this is éveiller
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Here comes some text. Edit if it's needed -->
+            <div id="provider_text">
+                <h1>A few about <br> our provider</h1>
+
+                <!-- Here comes the photo for the responsive layout -->
+                <div id="provider_image_responsive">
+                    <img id="provider_actual_image_responsive" src="images/provider_image.png" alt="">
+                    <div id="side_image_text">
+                        <h1>
+                            professionalism & 
+                            <br>
+                            excellence
+                        </h1>
+                    </div>
+                </div>
+
+                <!-- Continuation of the editable text -->
+                <div id="provide_header_underline"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum, iure soluta totam veritatis consectetur asperiores, ex fuga recusandae deserunt dolore assumenda sit. Earum iste ad ullam nesciunt eos. Quidem totam, autem, doloremque qui eaque voluptatem omnis rerum nihil quod sed ad, nisi aut illo consequatur saepe explicabo ut commodi mollitia facere? Delectus hic culpa, sapiente eaque labore accusantium exercitationem veritatis, possimus vel esse fugit inventore illum omnis. Cupiditate odit illo minus earum quam doloremque suscipit nostrum ullam alias natus voluptatibus sint, cum molestias. Voluptas, porro repellat! Nemo architecto magni illum perferendis repudiandae, enim sint vel earum, animi, eius suscipit.</p>
+            </div>
+        </section>
+
+
+        <!-- SECTION4: What's new this week? -->
+        <section id="new_products">
+
+            <!-- Here comes the image of the product
+            Only the first image is put here, because the others are created in the "index.js" file 
+            
+            All you need to do is to put in the folder "images" the images you want to display with the name "coffeeX", where X is the numeric value (1,2,3 ...) 
+            Careful! The image should have "png" extension!
+            -->
+            <div id="coffee_product">
+                <img id="coffee_product_img0" src="images/coffee1.png" alt="">
+            </div>
+
+            <!-- Here comes the counter (who shows the id/number of the product) -->
+            <div id="product_counter">
+                <h1 id="counter1">
+                    01
+                    <div id="product_counter_line"></div>
+                </h1>
+                <h1 id="counter2">
+                    02
+                    <div id="product_counter_line"></div>
+                </h1>
+                <h1 id="counter3">
+                    03
+                    <div id="product_counter_line"></div>
+                </h1>
+                <h1 id="counter4">
+                    04
+                    <div id="product_counter_line"></div>
+                </h1>
+
+                <!-- If you want more than 4 weekly products add elements like this: 
+                
+                    <h1 id="counterX">
+                        0X
+                        <div id="product_counter_line"></div>
+                    </h1>
+                
+                Where X = the number you want to add (5, 6, etc.)
+                -->
+            </div>
+
+            <!-- Here come the product's info -->
+            <div id="product_info">
+                <div id="product_info_text">
+                    <!-- Change the fixed titles with the info you want or add more by copy-pasting "<h1>" elements like below -->
+                    <div id="fixed_titles">
+                        <h1>capacity</h1>
+                        <h1>calories</h1>
+                        <h1>sugar</h1>
+                        <h1>total fats</h1>
+                        <h1>calcium</h1>
+
+                        <!-- Add lines like below in the fixed_titles section:
+                            <h1>some fixed title you want to put</h1>
+                        -->
+                    </div>
+                    
+                    <!-- The actual numeric info will be changed in the "index.js" file 
+                    Change here only the numeric info of the first product --> 
+                    <div id="numeric_values">
+                        <h1>200 ml</h1>
+                        <h1>245</h1>
+                        <h1>30 g</h1>
+                        <h1>0.9 g</h1>
+                        <h1>15 g</h1>
+                    </div>
+                </div>
+        
+                <!-- Details regarding the beauty of the div -->
+                <div id="product_info_footer">
+                    <div id="product_info_footer_line"></div>
+                    <img id="footer_bean" src="images/coffee_bean.png" alt="">
+                    <div id="product_info_footer_line"></div>
+                </div>
+
+                <div id="product_info_coffee_repeat">
+                    <h1>Coffee</h1>
+                    <h1>Coffee</h1>
+                    <h1>Coffee</h1>
+                    <h1>Coffee</h1>
+                </div>
+            </div>
+
+            <!-- The next/back buttons -->
+            <div onClick="newProduct(+1)" id="next_button">
+                <div id="actual_button">
+                    <img src="images/brown_back_next_button.png" alt="">
+                </div>
+                <h1>next</h1>
+            </div>
+
+            <div onClick="newProduct(-1)" id="ant_button">
+                <div id="actual_button">
+                    <img src="images/brown_back_next_button.png" alt="">
+                </div>
+                <h1>back</h1>
+            </div>
+
+            <!-- The name of the product 
+            Changable in the "index.js" file 
+            You need to change here only the name of the first product 
+            -->
+            <div id="product_name">
+                <div id="border_box"></div>
+                <img src="images/logo_white_simple_version.png" alt="">
+                
+                <!-- Change below the name of the first product--> 
+                <h1 id="product_name_header">
+                    Sweety
+                    <br> <!-- "<br>" means new line. So if you want your title to be displayed on 2 lines, keep it like that -->
+                    Pumpkin Pie
+                </h1>
+            </div>
+
+            <!-- Coming Up box -->
+            <div onclick="newProduct(+1)" id="coming_up">
+                <img id="coming_up_image" src="images/coffee2.png" alt="">
+
+                <div class="border_square" id="border_square1"></div>
+                <div class="border_square" id="border_square2"></div>
+                <div class="border_square" id="border_square3"></div>
+                <div class="border_square" id="border_square4"></div>
+
+                <h1>Coming Up</h1>
+            </div>
+
+            <!-- Details regarding the beauty of the section -->
+            <div id="coffee_repeat">
+                <h1>Coffee</h1>
+                <h1>Coffee</h1>
+                <h1>Coffee</h1>
+                <h1>Coffee</h1>
+            </div>
+
+            <div id="side_header">
+                <div id="connect_line"></div>
+                <h1>what's new</h1>
+                <div id="connect_line"></div>
+                <h1>this week</h1>
+                <div id="connect_line"></div>
+                <h1>what's new</h1>
+                <div id="connect_line"></div>
+                <h1>this week</h1>
+                <div id="connect_line"></div>
+                <h1>what's new</h1>
+                <div id="connect_line"></div>
+                <h1>this week</h1>
+                <div id="connect_line"></div>
+            </div>
+        </section>
+
+
+        <!-- SECTION5: Testimonials -->
+        <section id="testimonials">
+
+            <!-- Here comes an introduction text (change the paragraph text as you wish) -->
+            <div id="testimonials_text">
+                <h1>Testimonials</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, mollitia? Assumenda tempore possimus explicabo unde fugiat reiciendis, aut obcaecati nesciunt odit vel ratione deserunt qui aspernatur, omnis velit aperiam sint officiis eaque in! At dolor recusandae minus aliquid inventore mollitia officiis iusto unde quo facere.</p>
+                
+                <!-- Some details regarding the beauty of the page -->
+                <img id="cookie1" src="images/cookie1.png" alt="">
+                <img id="cookie2" src="images/cookie2.png" alt="">
+                <img id="cookie3" src="images/cookie3.png" alt="">
+            </div>
+
+            <!-- Here are the main testimonials. Change here only the content of the first 2 reviews
+            The others will need a change in the "index.js" file -->
+            <div id="reviews">
+                <div class="current_review" id="review1">
+                    <!-- Change the paragraph below with the review from the first customer -->
+                    <p id="current_review_p">Lorem ips1um dolor, sit amet consectetur adipisicing elit. Voluptatem reprehenderit deleniti eos alias ex consectetur obcaecati doloremque dolorum? Nam corporis saepe temporibus fugiat sequi in unde, maiores labore minima odit, enim, reiciendis quis sapiente quas voluptatum sed esse obcaecati nemo. Veritatis nulla illo inventore deserunt sapiente. Harum unde inventore natus?</p>
+                    
+                    <!-- Some details regarding the beauty of the review -->
+                    <div id="testimonials_mid_footer">
+                        <div id="testimonials_line"></div>
+                        <img src="images/quotes.png" alt="">
+                        <div id="testimonials_line"></div>
+                    </div>
+        
+                    <div id="coffee_beans">
+                        <img src="images/coffee_beans.png" alt="">
+                    </div>
+                    
+                    <div onclick="nextReview()" id="responsive_next_button">
+                        <h1>next</h1>
+                        <img src="images/white_next_button.png" alt="">
+                    </div>
+
+                    <!-- Here is the info about the client. 
+                    Again ... change here only for the first client. 
+                    The rest will need to be changed in the "index.js" file
+                    -->
+                    <div id="client_info">
+                        <h1 id="current_review_name">Josh Dave</h1>
+                        <h2 id="current_review_job">@director at CompanyTL</h2>
+                    </div>
+                </div>
+
+                <!-- Here is the second review -->
+                <div onclick="nextReview()" class="next_review" id="review2">
+                    <!-- Change the paragraph below with the review from the second customer -->
+                    <p id ="next_review_p">Lorem ips2um dolor, sit amet consectetur adipisicing elit. Voluptatem reprehenderit deleniti eos alias ex consectetur obcaecati doloremque dolorum? Nam corporis saepe temporibus fugiat sequi in unde, maiores labore minima odit, enim, reiciendis quis sapiente quas voluptatum sed esse obcaecati nemo. Veritatis nulla illo inventore deserunt sapiente. Harum unde inventore natus?</p>
+                </div>
+
+                <!-- For functional reasons -->
+                <div id="next_review_cover"></div>
+
+                <!-- Another detail regarding the beauty of the review (animation) -->
+                <div class="" id="animate_review_div"></div>
+            </div>
+        </section>
+
+
+        <!-- SECTION6: The menu -->
+        <section id="menu">
+            <!-- The menu is a editable svg photo. 
+            If you want to change the info, you have to edit the file "menu.svg" (from the folder "helpful_files") with InkScape, AdobeIllustrator or similar softwares 
+            Or you can simply give me a message through the platform you bought the template and I'll change it for you as you wish :) 
+            -->
+            <div id="top_menu_bar"></div>
+            <div id="background_menu"></div>
+            <div id="actual_menu">
+                <img src="images/menu.jpg" alt="">
+            </div>
+        </section>
+
+
+        <!-- SECTION7: Get in touch-->
+        <section id="contact">
+            <div id="content">
+                <!-- Here is the main title -->
+                <div id="contact_header">
+                    <h1>Get in Touch</h1>
+                    <h2>drink <br> coffee</h2>
+                </div>
+
+                <!-- Edit this for backend -->
+                <form id="contact_form" action="">
+                    <div class="form_input">
+                        <input id="form_input1" type="text" required placeholder="">
+                        <label for="form_input1">Name</label>
+                    </div>
+                    <div class="form_input">
+                        <input id="form_input2" type="text" required placeholder="">
+                        <label for="form_input2">E-mail</label>
+                    </div>
+                    <div class="textarea_input">
+                        <textarea id="textarea" name="" cols="30" rows="10" required></textarea>
+                        <label for="textarea">write <br> something</label>
+                    </div>
+                </form>
+
+                <!-- Here is some info text regarding the terms and conditions of sending the message.
+                Edit its content by your country rules -->
+                <div id="text_under_form">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus laboriosam praesentium blanditiis quas qui deserunt.</p>
+                </div>
+
+                <!-- Action buttons (also for backend) --> 
+                <div id="buttons">
+                    <button id="contact_button">
+                        <h1>contact</h1>
+                    </button>
+
+                    <button id="subscribe_button">
+                        <h1>subscribe</h1>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="image_box">
+                <img id="colored_cake" src="images/colored_cake.png" alt="">
+            </div>
+        </section>
+
+
+        <!-- SECTION8: Locations -->
+        <section id="location">
+            
+            <!-- Here is the google maps embed map 
+            (you can go to google maps, create your own map and find the button that says "embed map" 
+            copy the "iframe" link that it is shown there and paste it over the iframe already put here 
+            CAREFUL: inside the iframe copy-pasted from google maps sites delete the "width" and "heigth" texts that are visible after the http link 
+            -->
+            <div id="map">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1gIdg4j3MuBlxcpFiO9KmWvtAc7c3yIeT"></iframe>
+                <h1>visit us</h1>
+            </div>
+
+            <!-- Put the text and the locations as you wish here 
+            Change only the first two here (the other in the "index.js" file -->
+            <div id="location_text">
+                <div class="location_text_box">
+
+                    <h1 id="first_location_title">Bolton</h1> <!-- The header -->
+
+                    <div id="underline_location_header"></div>
+                    
+                    <div class="actual_info_location">
+                        <img src="images/location.png" alt="">
+                        <h2 id="first_location_address">Bolton, 42 Thames Street</h2> <!-- The adress. Don't make it too long -->
+                    </div>
+
+                    <div class="actual_info_location">
+                        <img src="images/phone_number.png" alt="">
+                        <h2 id="first_location_phone">078 8348 9826</h2> <!-- The phone number -->
+                    </div>
+
+                    <div class="actual_info_location">
+                        <img src="images/facebook_footer.png" alt="">
+                        <h2 id="first_location_facebook">@Éveiller_Bolton</h2> <!-- The facebook page -->
+                    </div>
+                </div>
+
+                <div class="location_text_box">
+                    <h1 id="second_location_title">Manchaster</h1>
+
+                    <div id="underline_location_header"></div>
+
+                    <div class="actual_info_location">
+                        <img src="images/location.png" alt="">
+                        <h2 id="second_location_address">Manchaster, 90 Cunnery Rd</h2>
+                    </div>
+
+                    <div class="actual_info_location">
+                        <img src="images/phone_number.png" alt="">
+                        <h2 id="second_location_phone">079 3472 1165</h2>
+                    </div>
+
+                    <div class="actual_info_location">
+                        <img src="images/facebook_footer.png" alt="">
+                        <h2 id="second_location_facebook">@Éveiller_Manchaster</h2>
+                    </div>
+                </div>
+
+                <div onclick="next_footer_location()" id="more_footer_button">
+                    <img src="images/white_next_button.png" alt="">
+                    <h1>more</h1>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECTION9: Footer -->
+        <section id="footer">
+            <!-- The logo in the middle -->
+            <div id="middle_footer_logo">
+                <img src="images/white_classic_logo.png" alt="">
+            </div>
+
+            <!-- Social media links: here add the links to your social media pages. Instead of the "#" in the href="#" add the URL link to your social media pages -->
+            <div id="social_media_footer">
+                <a href="#"><img src="images/facebook.png" alt=""></a>
+                <a href="#"><img src="images/instagram.png" alt=""></a>
+                <a href="#"><img src="images/twitter.png" alt=""></a>
+            </div>
+
+            <!-- Some cute title on the right -->
+            <div id="right_header">
+                <h1>2020@</h1>
+                <h2>Éveiller</h2>
+            </div>
+
+            <!-- Here is a short list of sponsors and partners (put around 4 or 5) -->
+            <div id="partners">
+                <h1>SponsorOne</h1>
+                <h1>SponsorTwo</h1>
+                <h1>SponsorThree</h1>
+                <h1>SponsorFour</h1>
+                
+                <!-- Add more like above if you want to put more sponsors 
+                Also ... change the text of the first four sponsors / partners :) 
+                -->
+            </div>
+        </section>
+
+
+        <!-- SECTION10: The Navbar -->
+        <section id="navbar">
+            <div id="navbar_background"></div>
+
+            <div id="navbar_links">
+                <a onclick="closeNav()" href="#landing_page">Home</a>
+                <a onclick="closeNav()" href="#our_history">About</a>
+                <a onclick="closeNav()" href="#new_products">What's new?</a>
+                <a onclick="closeNav()" href="#testimonials">Testimonials</a>
+                <a onclick="closeNav()" href="#menu">Menu</a>
+                <a onclick="closeNav()" href="#contact">Contact</a>
+                <a onclick="closeNav()" href="#location">Location</a>
+            </div>
+
+            <div onclick="closeNav()" id="close_button">
+                <div id="close_navbar_line1"></div>
+                <div id="close_navbar_line2"></div>
+            </div>
+
+            <div id="tilt_screen">
+                <h1>Your screen height is too low. Maybe tilting it will help.</h1>
+                <img src="images/tilt_screen.png" alt="">
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="index.js"></script>
+
+</html>
